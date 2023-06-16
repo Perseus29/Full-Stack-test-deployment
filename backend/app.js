@@ -3,9 +3,9 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const Todo = require('./models/Todo');
 const app = express();
-require('dotenv').config();
+require("dotenv").config();
 
-const db = 'mongodb+srv://Priyanshu:Winomeo@mern-todo.ur19suk.mongodb.net/mern-todo?retryWrites=true&w=majority';
+const db = process.env.db;
 
 const port = process.env.PORT || 5000;
 
