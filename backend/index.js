@@ -5,7 +5,7 @@ const Todo = require('./models/Todo');
 const app = express();
 require('dotenv').config();
 
-const db = process.env.DATABASE;
+const db = process.env.db;
 
 const port = process.env.PORT || 5000;
 
